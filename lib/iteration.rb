@@ -51,8 +51,9 @@ def total_even_pairs(src)
       even.push(src[counter][0])
     end
     if (src[counter][1] %2 == 0) then
-      even.push(src[counter][0] + src[counter][1] )
+      even.push(src[counter][1])
     end
+    
   end
   total
 end
