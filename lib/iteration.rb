@@ -47,10 +47,10 @@ def total_even_pairs(src)
     even = []
     total = []
   src.length.times do |counter|
-    case (src[counter][0] %2 == 0) then
-      push 
-      
-      src[counter][1] %2 == 0
+    if (src[counter][0] %2 == 0) then
+      even.push(src[counter][0])
+    end
+    if (src[counter][1] %2 == 0) then
       even.push(src[counter][0] + src[counter][1] )
     end
   end
